@@ -10,12 +10,10 @@ public class Main {
         System.out.println("What is your name?");
         Scanner scanner = new Scanner(System.in);
         String name = scanner.nextLine();
-        if(name.equals("Alice")){
+        if (name.equals("Alice")) {
+            System.out.println("Hello, " + name + "!");
+        } else if (name.equals("Bob")) {
             System.out.println("Hello, " + name + "!");
         }
-        else if(name.equals("Bob")){
-            System.out.println("Hello, " + name + "!");
-        }
-        else return;
     }
 }
