@@ -10,10 +10,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number n: ");
         int n = scanner.nextInt();
+        scanner.nextLine();
         int result;
         System.out.println("Select sum or mult: ");
-        Scanner scanner1 = new Scanner(System.in);
-        String enter = scanner1.nextLine();
+        String enter = scanner.nextLine();
         if (enter.equals("sum")) {
             result = 0;
             for (int i = 0; i <= n; i++) {
