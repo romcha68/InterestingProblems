@@ -14,7 +14,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
         int randomNumber = random.nextInt(100);
-        int i = 1;
+        int attemptCount = 1;
 
         while (true) {
             System.out.println("Guess the number from 0 to 100");
@@ -27,8 +27,8 @@ public class Main {
             } else if (inputNumber < randomNumber) {
                 System.out.println("More!");
             }
-            System.out.println("Attempt " + i++);
+            System.out.println("Attempt " + attemptCount++);
         }
-        System.out.println("Just attempt to: " + i);
+        System.out.println("Just attempt to: " + attemptCount);
     }
 }
