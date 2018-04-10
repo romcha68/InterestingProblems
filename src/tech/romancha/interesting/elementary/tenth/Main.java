@@ -12,9 +12,9 @@ public class Main {
         GregorianCalendar gregorianCalendar = new GregorianCalendar();
         int year = gregorianCalendar.get(Calendar.YEAR);
         System.out.println("Leap years: " );
-        for(int leapYearCounter = 1; leapYearCounter < 20;) {
+        for(int leapYearCounter = 0; leapYearCounter < 20;) {
             ++year;
-            if (gregorianCalendar.isLeapYear(year) == true) {
+            if (gregorianCalendar.isLeapYear(year)) {
                 leapYearCounter++;
                 System.out.printf("%15d \n",year);
             }
